@@ -1,15 +1,18 @@
 <template>
   <div id="app">
+    <nav-bar />
     <landing-page />
   </div>
 </template>
 
 <script>
+import NavBar from './components/NavBar.vue'
 import LandingPage from './components/LandingPage.vue'
 
 export default {
   name: 'App',
   components: {
+    NavBar,
     LandingPage
   }
 }
@@ -21,7 +24,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
