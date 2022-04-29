@@ -12,7 +12,7 @@
       <b-collapse id="nav-item-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item href="#services">Services</b-nav-item>
-          <b-nav-item href="#portfolio">Portfolio</b-nav-item>
+          <b-nav-item href="#product">Sản Phẩm</b-nav-item>
           <b-nav-item href="#team">Team</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
