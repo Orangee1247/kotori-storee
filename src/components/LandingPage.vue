@@ -51,7 +51,7 @@
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
         <div class="row">
-          <product-item v-for="item in PRODUCT_DATA" :key="item.id" :item="item" />
+          <product-item v-for="item in PRODUCT_DATA" :key="item.id" :item="item" @selected="selectItem(item)" />
         </div>
       </div>
     </section>
@@ -116,225 +116,32 @@
         </div>
       </div>
     </footer>
-    <!-- product Modals-->
-    <!-- product item 1 modal popup-->
-    <!-- <div class="product-modal modal fade" id="productModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal"><img src="@/assets/img/close-icon.svg" alt="Close modal" /></div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="@/assets/img/product/1.jpg" alt="..." />
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Threads
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Illustration
-                    </li>
-                  </ul>
-                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- product item 2 modal popup-->
-    <!-- <div class="product-modal modal fade" id="productModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal"><img src="@/assets/img/close-icon.svg" alt="Close modal" /></div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="@/assets/img/product/2.jpg" alt="..." />
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Explore
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Graphic Design
-                    </li>
-                  </ul>
-                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- product item 3 modal popup-->
-    <!-- <div class="product-modal modal fade" id="productModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal"><img src="@/assets/img/close-icon.svg" alt="Close modal" /></div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="@/assets/img/product/3.jpg" alt="..." />
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Finish
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Identity
-                    </li>
-                  </ul>
-                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- product item 4 modal popup-->
-    <!-- <div class="product-modal modal fade" id="productModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal"><img src="@/assets/img/close-icon.svg" alt="Close modal" /></div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="@/assets/img/product/4.jpg" alt="..." />
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Lines
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Branding
-                    </li>
-                  </ul>
-                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- product item 5 modal popup-->
-    <!-- <div class="product-modal modal fade" id="productModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal"><img src="@/assets/img/close-icon.svg" alt="Close modal" /></div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="@/assets/img/product/5.jpg" alt="..." />
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Southwest
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Website Design
-                    </li>
-                  </ul>
-                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- product item 6 modal popup-->
-    <!-- <div class="product-modal modal fade" id="productModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal"><img src="@/assets/img/close-icon.svg" alt="Close modal" /></div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="@/assets/img/product/6.jpg" alt="..." />
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Window
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Photography
-                    </li>
-                  </ul>
-                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <!-- PRODUCT MODAL -->
+    <transition name="modal">
+      <product-detail v-if="selectingItem" :item="selectingItem" @close="selectItem(null)" />
+    </transition>
   </div>
 </template>
 
 <script>
 import PRODUCT_DATA from '@/utils/productData'
 import ProductItem from '@/components/ProductItem.vue'
+import ProductDetail from '@/components/ProductDetail.vue'
 
 export default {
   components: {
-    ProductItem
+    ProductItem,
+    ProductDetail
   },
   data () {
     return {
-      PRODUCT_DATA
+      PRODUCT_DATA,
+      selectingItem: null
+    }
+  },
+  methods: {
+    selectItem (item) {
+      this.selectingItem = item
     }
   }
 }

@@ -11606,3 +11606,28 @@ header.masthead .masthead-heading {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.modal-enter-active {
+  transition: opacity .5s ease;
+}
+.modal-enter-active .commonModal-center {
+  transition: transform .5s ease;
+}
+.modal-leave-active {
+  transition: opacity .5s ease;
+}
+.modal-leave-active .commonModal-center {
+  transition: transform .5s ease;
+}
+.modal-enter-from {
+  opacity: 0;
+}
+.modal-enter-from .commonModal-center {
+  transform: translate(0, 100%);
+}
+.modal-leave-to {
+  opacity: 0;
+}
+.modal-leave-to .commonModal-center {
+  transform: translate(0, -100%);
+}

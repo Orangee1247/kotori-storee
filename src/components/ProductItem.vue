@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-4 col-sm-6 mb-4">
+  <div class="col-lg-4 col-sm-6 mb-4" @click="$emit('selected')">
     <div class="product-item">
       <a class="product-link" data-bs-toggle="modal">
         <div class="product-hover">
