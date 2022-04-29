@@ -1,10 +1,7 @@
 <template>
   <b-navbar class="fixed-top" toggleable="sm" type="dark" variant="dark">
     <div class="container">
-      <b-navbar-brand>
-        Kotori Store
-        <img src="@/assets/img/logo.png" />
-      </b-navbar-brand>
+      <b-navbar-brand>Kotori Store</b-navbar-brand>
       <b-navbar-toggle target="nav-item-collapse">
         MENU
         <i class="fas fa-bars ms-1" />
