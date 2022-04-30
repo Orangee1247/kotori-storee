@@ -52,7 +52,7 @@
         </div>
         <b-form-select v-model="selectingCategory" :options="categoryOptions" class="mb-3"></b-form-select>
         <div class="row">
-          <product-item v-for="item in PRODUCT_DATAS" :key="item.id" :item="item" @selected="selectItem(item)" />
+          <product-item v-for="item in productList" :key="item.id" :item="item" @selected="selectItem(item)" />
         </div>
       </div>
     </section>
@@ -137,7 +137,6 @@ export default {
   },
   data () {
     return {
-      PRODUCT_DATAS,
       selectingCategory: null,
       selectingItem: null
     }
@@ -151,6 +150,10 @@ export default {
     categoryOptions () {
       const defaultOption = { value: null, text: 'Danh mục sản phẩm' }
       return [defaultOption, ...PRODUCT_CATEGORIES]
+    },
+    productList () {
+      if (this.selectingCategory) return PRODUCT_DATAS.filter(v => v.category === this.selectingCategory)
+      return []
     }
   }
 }
