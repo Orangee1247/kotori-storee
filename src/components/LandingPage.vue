@@ -5,40 +5,40 @@
       <div class="container">
         <div class="masthead-subheading">🌻 Cảm ơn bạn đã ghé thăm 🌻</div>
         <div class="masthead-heading text-uppercase">Chúng mình là Kotori Store</div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tìm hiểu thêm</a>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#about">Tìm hiểu thêm</a>
       </div>
     </header>
-    <!-- Services-->
-    <section class="page-section" id="services">
+    <!-- About-->
+    <section class="page-section" id="about">
       <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Giới thiệu Dịch vụ</h2>
+            <h3 class="section-subheading text-muted">🌱 Chúng mình là Kotori Store, xin gửi đến bạn những sản phẩm chất lượng nhất từ Nhật Bản 🌱</h3>
         </div>
         <div class="row text-center">
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span class="fa-stack fa-3x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="my-3">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="my-3">Mặt hàng đa dạng</h4>
+            <p class="text-muted">Kotori Store gửi đến bạn các những hàng nội địa Nhật Bản nhiều người tin dùng. Từ gói Vitamin, rau củ của nhà DHC đến những lọ nhỏ mắt Rotho giúp bạn nhìn rõ được giá trị bản thân. Và khi nghỉ ngơi trà chiều, bạn đừng quên những vị Kitkat mới lạ của chúng mình nhé.</p>
           </div>
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span class="fa-stack fa-3x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="my-3">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="my-3">Dễ dàng truy cập</h4>
+            <p class="text-muted">Chúng mình hiện tại đăng các mặt hàng trên nhiều nền tảng như Facebook, Instagram cũng như website các bạn đang theo dõi. Kotore Store sẽ cố gắng cập nhật thông tin các sản phẩm nhanh chóng giúp bạn chốt đơn nhanh bổ rẻ cùng các chương trình khuyến mại trong tương lai.</p>
           </div>
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span class="fa-stack fa-3x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-clock fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="my-3">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="my-3">Trả hàng nhanh chóng</h4>
+            <p class="text-muted">Với phương châm thời gian là tiền bạc, chúng mình sẽ cố gắng trả hàng sớm nhất đến bạn trong vòng 1 tuần với hàng có sẵn và 3 ~ 4 tuần với hàng order mới. Càng nhiều mặt hàng được order mới thì chúng mình càng có thể gom đơn và gửi về Việt Nam được sớm hơn.</p>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
       </div>
     </section>
     <!-- Footer-->
-    <footer class="footer py-4">
+    <footer class="footer py-4" id="footer">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
