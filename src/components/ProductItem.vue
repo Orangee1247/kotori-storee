@@ -1,7 +1,7 @@
 <template>
   <div class="col-lg-4 col-sm-6 mb-4" @click="$emit('selected')">
     <div class="product-item">
-      <a class="product-link" data-bs-toggle="modal">
+      <a class="product-link">
         <div class="product-hover">
           <div class="product-hover-content"><i class="fas fa-plus fa-3x"></i></div>
         </div>
