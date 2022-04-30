@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Masthead-->
+    <!-- MASTHEAD-->
     <header class="masthead">
       <div class="container">
         <div class="masthead-subheading">🌻 Cảm ơn bạn đã ghé thăm 🌻</div>
@@ -8,7 +8,7 @@
         <a class="btn btn-primary btn-xl text-uppercase" href="#about">Tìm hiểu thêm</a>
       </div>
     </header>
-    <!-- About-->
+    <!-- ABOUT-->
     <section class="page-section" id="about">
       <div class="container">
         <div class="text-center">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </section>
-    <!-- Product-->
+    <!-- PRODUCT-->
     <section class="page-section bg-light" id="product">
       <div class="container">
         <div class="text-center">
@@ -56,7 +56,7 @@
         </div>
       </div>
     </section>
-    <!-- Team-->
+    <!-- CONTACT-->
     <section class="page-section" id="contact">
       <div class="container">
         <div class="text-center">
@@ -78,19 +78,14 @@
         </div>
       </div>
     </section>
-    <!-- Footer-->
+    <!-- FOOTER-->
     <footer class="footer py-4" id="footer">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
-          <div class="col-lg-4 my-3 my-lg-0">
-            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <div class="col-lg-4 text-lg-end">
-            <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+          <div class="col-lg-4 text-lg-start">Copyright &copy; Kotori Store 2022</div>
+          <div class="col-lg-4 text-lg-center"></div>
+          <div class="col-lg-4 text-lg-end backTop">
+            <a href="#product">Quay lại sản phẩm <i class="fas fa-arrow-up"></i></a>
           </div>
         </div>
       </div>

@@ -11652,3 +11652,7 @@ select {
   -webkit-appearance: none;
   appearance: none;
 }
+.backTop a {
+  color: #35987F;
+  font-weight: bold;
+}
