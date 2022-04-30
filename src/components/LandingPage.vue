@@ -126,7 +126,7 @@ export default {
     },
     productList () {
       if (this.selectingCategory) return PRODUCT_DATAS.filter(v => v.category === this.selectingCategory)
-      return []
+      return PRODUCT_DATAS.slice(0, 3)
     }
   }
 }

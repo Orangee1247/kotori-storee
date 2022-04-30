@@ -9,7 +9,7 @@
       </a>
       <div class="product-caption">
         <div class="product-caption-heading">{{ item.heading }}</div>
-        <div class="product-caption-subheading text-muted">{{ item.subheading }}</div>
+        <div class="product-caption-subheading text-muted-mb0">{{ item.subheading }}</div>
       </div>
     </div>
   </div>

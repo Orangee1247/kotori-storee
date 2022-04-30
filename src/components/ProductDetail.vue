@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="commonModal-center-text">
-        aBC
+        Price: 120,000VND
       </div>
     </div>
   </div>
