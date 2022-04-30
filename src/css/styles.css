@@ -3246,19 +3246,19 @@ textarea.form-control-lg {
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #35987F;
+  border-color: #35987F;
 }
 .btn-check:focus + .btn-dark, .btn-dark:focus {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #35987F;
+  border-color: #35987F;
   box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
 }
 .btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
   color: #fff;
-  background-color: #1a1e21;
-  border-color: #191c1f;
+  background-color: #35987F;
+  border-color: #35987F;
 }
 .btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
@@ -11591,16 +11591,16 @@ header.masthead .masthead-heading {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
+.contact {
   margin-bottom: 3rem;
   text-align: center;
 }
-.team-member img {
+.contact img {
   width: 14rem;
   height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border: 0.35rem solid #35987F;
 }
-.team-member h4, .team-member .h4 {
+.contact h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }

@@ -10,7 +10,7 @@
         <b-navbar-nav>
           <b-nav-item href="#about">Giới thiệu</b-nav-item>
           <b-nav-item href="#product">Sản Phẩm</b-nav-item>
-          <b-nav-item href="#footer">Liên hệ</b-nav-item>
+          <b-nav-item href="#contact">Liên hệ</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </div>
