@@ -43,12 +43,12 @@
         </div>
       </div>
     </section>
-    <!-- product Grid-->
+    <!-- Product-->
     <section class="page-section bg-light" id="product">
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Sản Phẩm</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">🌱 Cùng xem qua những sản phẩm nội địa được ưa chuộng ở Nhật Bản nhé 🌱</h3>
         </div>
         <div class="row">
           <product-item v-for="item in PRODUCT_DATA" :key="item.id" :item="item" @selected="selectItem(item)" />
