@@ -11639,3 +11639,11 @@ header.masthead .masthead-heading {
 .modal-leave-to .commonModal-center {
   transform: translate(0, -100%);
 }
+.custom-select {
+  width: 100%;
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  color: #495057;
+  vertical-align: middle;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}

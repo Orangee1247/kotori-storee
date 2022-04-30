@@ -50,8 +50,9 @@
           <h2 class="section-heading text-uppercase">Sản Phẩm</h2>
           <h3 class="section-subheading text-muted">🌱 Cùng xem qua những sản phẩm nội địa được ưa chuộng ở Nhật Bản nhé 🌱</h3>
         </div>
+        <b-form-select v-model="selectingCategory" :options="categoryOptions" class="mb-3"></b-form-select>
         <div class="row">
-          <product-item v-for="item in PRODUCT_DATA" :key="item.id" :item="item" @selected="selectItem(item)" />
+          <product-item v-for="item in PRODUCT_DATAS" :key="item.id" :item="item" @selected="selectItem(item)" />
         </div>
       </div>
     </section>
@@ -124,7 +125,8 @@
 </template>
 
 <script>
-import PRODUCT_DATA from '@/utils/productData'
+import PRODUCT_DATAS from '@/resources/productData'
+import PRODUCT_CATEGORIES from '@/resources/productCategory'
 import ProductItem from '@/components/ProductItem.vue'
 import ProductDetail from '@/components/ProductDetail.vue'
 
@@ -135,13 +137,20 @@ export default {
   },
   data () {
     return {
-      PRODUCT_DATA,
+      PRODUCT_DATAS,
+      selectingCategory: null,
       selectingItem: null
     }
   },
   methods: {
     selectItem (item) {
       this.selectingItem = item
+    }
+  },
+  computed: {
+    categoryOptions () {
+      const defaultOption = { value: null, text: 'Danh mục sản phẩm' }
+      return [defaultOption, ...PRODUCT_CATEGORIES]
     }
   }
 }
