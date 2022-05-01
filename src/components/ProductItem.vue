@@ -3,7 +3,7 @@
     <div class="product-item">
       <a class="product-link">
         <div class="product-hover">
-          <div class="product-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+          <div class="product-hover-content">Xem sản phẩm</div>
         </div>
         <img class="img-fluid" :src="imageUrl" alt="#" />
       </a>
