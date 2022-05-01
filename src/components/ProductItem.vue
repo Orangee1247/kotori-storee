@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-4 col-sm-6 mb-4" @click="$emit('selected')">
+  <div class="product mb-4" :class="{ mobile }" @click="$emit('selected')">
     <div class="product-item">
       <a class="product-link">
         <div class="product-hover">
@@ -21,9 +21,30 @@ export default {
     item: Object
   },
   computed: {
+    mobile () {
+      return this.$device.mobile
+    },
     imageUrl () {
       return require(`@/assets/img/products/${this.item.id}.png`)
     }
   }
 }
 </script>
+
+<style scoped>
+.product {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.mobile {
+  width: 50%;
+}
+.product .img-fluid {
+  height: 356px;
+  width: 356px;
+}
+.mobile .img-fluid {
+  height: 180px;
+  width: 180px;
+}
+</style>

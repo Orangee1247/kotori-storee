@@ -1,12 +1,9 @@
 <template>
   <div class="commonModal" @click="$emit('close')">
     <div class="commonModal-center" @click.stop>
+      <div class="closeButton" @click="$emit('close')">×</div>
       <div class="commonModal-center-title">Mô tả sản phẩm</div>
-      <div class="commonModal-center-content">
-        <div class="commonModal-center-content-image">
-          <img :src="imageUrl" />
-        </div>
-      </div>
+      <img class="commonModal-center-image" :src="imageUrl" />
       <div class="commonModal-center-text">
         Price: 120,000VND
       </div>
@@ -43,12 +40,12 @@ export default {
 .commonModal-center {
   position: relative;
   flex: 1;
-  max-width: 1140px;
-  max-height: 700px;
+  max-width: 400px;
+  max-height: 500px;
   margin: auto 15px;
   background: #fff;
-  padding: 25px 10px 20px;
-  border-radius: 3px;
+  padding: 30px 10px;
+  border-radius: 15px;
 }
 .commonModal-center-title {
   margin-bottom: 20px;
@@ -56,8 +53,23 @@ export default {
   font-weight: bold;
   color: black;
 }
+.commonModal-center-image {
+  width: 300px;
+}
 .commonModal-center-text {
   color: #555;
   font-size: 12px;
+}
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  font-size: 28px;
+  color: black;
+}
+.closeButton:hover {
+  color: #35987F;
+  font-weight: bold;
 }
 </style>
