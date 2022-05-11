@@ -11664,3 +11664,6 @@ select {
   color: #35987F;
   font-weight: bold;
 }
+.vue-typer .custom.char {
+  color: white;
+}

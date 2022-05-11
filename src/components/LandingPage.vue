@@ -3,7 +3,9 @@
     <!-- MASTHEAD-->
     <header class="masthead">
       <div class="container">
-        <div class="masthead-subheading">🌻 Cảm ơn bạn đã ghé thăm 🌻</div>
+        <div class="masthead-subheading">
+          <vue-typer text='🌻 Cảm ơn bạn đã ghé thăm 🌻' repeat='0' type-delay='120' caret-animation='smooth' />
+        </div>
         <div class="masthead-heading text-uppercase">Chúng mình là Kotori Store</div>
         <a class="btn btn-primary btn-xl text-uppercase" href="#about">Tìm hiểu thêm</a>
       </div>
